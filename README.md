@@ -19,7 +19,7 @@
   ## Demo
 Link: [https://sms-spam-classification-flask.herokuapp.com/](https://sms-spam-classification-flask.herokuapp.com/)
 
-[![](https://i.imgur.com/5gj4USj.png)](https://sms-spam-classification-flask.herokuapp.com/)
+[![](/santnair0599/Spam-SMS-Classification---Heroku-Deployment/blob/main/readme_resources/spam-sms-web-app.gif?raw=true" alt="spam-sms-web-app.gif)](https://sms-spam-classification-flask.herokuapp.com/)
 
 ## Overview
 This is a simple image classification Flask app trained on the top of Keras API. The trained model (`app/model/model.h5`) takes an image (Indian Paper Currency) as an input and predict the class of image from __10, 20, 50, 100, 200, 500, 2000__ denomination.
