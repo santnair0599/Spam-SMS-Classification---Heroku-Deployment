@@ -17,7 +17,7 @@
   * [Credits](#credits)
   
   ## Demo
-Link: [https://sms-spam-classification-flask.herokuapp.com/](https://sms-spam-classification-flask.herokuapp.com/ target="_blank")
+Link: [https://sms-spam-classification-flask.herokuapp.com/](https://sms-spam-classification-flask.herokuapp.com/)
 
 ![Alt Text](https://github.com/santnair0599/Spam-SMS-Classification---Heroku-Deployment/blob/main/readme_resources/spam-sms-web-app.gif?raw=true)
 
