@@ -22,14 +22,20 @@ Link: [https://sms-spam-classification-flask.herokuapp.com/](https://sms-spam-cl
 ![Alt Text](https://github.com/santnair0599/Spam-SMS-Classification---Heroku-Deployment/blob/main/readme_resources/spam-sms-web-app.gif?raw=true)
 
 ## Overview
-This is a simple image classification Flask app trained on the top of Keras API. The trained model (`app/model/model.h5`) takes an image (Indian Paper Currency) as an input and predict the class of image from __10, 20, 50, 100, 200, 500, 2000__ denomination.
+This is a simple text classification problem using python where we sort spam messages from ham. The dataset that we’re using can be found at https://www.kaggle.com/uciml/sms-spam-collection-dataset. The dataset contains one set of SMS messages in English of 5,574 messages, tagged as being ham (legitimate) or spam. The modules used for building the model are — pandas, numpy, nltk, string and sklearn. Finally, a python web API is created using Flask and the model is deployed in Heroku.
 
-## Motivation
-What could be a perfect way to utilize unfortunate lockdown period? Like most of you, I spend my time in cooking, Netflix, coding and reading some latest research papers on weekends. The idea of classifying indian currency struck to me when I was browsing through some research papers. I couldn't find any relevant research paper (and of course dataset!) associated with it. And that led me to collect the images of Indian currency to train a deep learning model using [this](https://github.com/hardikvasa/google-images-download) amazing tool.
-
-## Technical Aspect
+## Project Lifecycle
 This project is divided into two part:
-1. Training a deep learning model using Keras. (_Not covered in this repo. I'll update the link here once I make it public._)
+**1. Exploratory Data Analysis:** 
+**1. Feature Engineering:** 
+**1. Feature Selection:** 
+**1. Model Creation and Hyperparameter Tuning:** 
+**1. Model Deployemnt:**   
+
+
+
+
+Training a deep learning model using Keras. (_Not covered in this repo. I'll update the link here once I make it public._)
 2. Building and hosting a Flask web app on Heroku.
     - A user can choose image from a device or capture it using a pre-built camera.
     - Used __Amazon S3 Bucket__ to store the uploaded image and predictions.
