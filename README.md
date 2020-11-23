@@ -25,7 +25,7 @@ Link: [https://sms-spam-classification-flask.herokuapp.com/](https://sms-spam-cl
 This is a simple text classification problem using python where we sort spam messages from ham. The dataset that we’re using can be found at https://www.kaggle.com/uciml/sms-spam-collection-dataset. The dataset contains one set of SMS messages in English of 5,574 messages, tagged as being ham (legitimate) or spam. The modules used for building the model are — pandas, numpy, nltk, seaborn, matplotlib, string and sklearn. Finally, a python web API is created using Flask and the model is deployed in Heroku.
 
 ## Performance Metric
-Since our dataset is imbalanced with 86% data being in ham class we’ll use F1 score (Precision*Recall/(Precision+Recall)) to measure the performance of the model.
+Since our dataset is imbalanced with 86% data being in ham class we’ll use F1 score (Precision*Recall/(Precision+Recall)) to measure the performance of the model. With the F1-score metric, we are trying to find an equal balance between precision and recall, which is extremely useful in most scenarios when we are working with imbalanced datasets. 
 
 ## Project Lifecycle
 This project is divided into two part:
@@ -35,8 +35,23 @@ a. Created countplots for spam vs ham. It was observed that the dataset is imbal
 b. Created a new feature of total word count in each text message. Generated a plot showing distribution of word count for Ham messages versus distribution of word count of Spam messages. It was observed that the Ham messages word count range below 25 words whereas Spam messages word count range between 15 to 20 words. 
 c. Created a binary feature (0 or 1) representing whether a text message has currency symbol ('€', '$', '¥', '£', '₹'). Generated a countplot using this new feature. It was observed that about 1/3 of the Spam messages have currency symbols, whereas currency symbols are rarely found in Ham messages
 
-**1. Feature Engineering:** 
-**1. Feature Selection:** 
+**2. Data Cleaning:** The following activities were performed as part of data cleaning:
+1. Removing special characters and numbers using regular expression
+2. Converting the entire SMS into lower case
+3. Tokenizing the SMS by words
+4. Removing the stop words
+5. Lemmatizing the words
+6. Joining the lemmatized words
+7. Building a corpus of words
+8. Finally, created a bag of words representation using TfidfVectorizer
+
+**3. Model Building and Evaluation:** 
+Multinomial Naive bayes, Decision Tree Classifier, Random Forest Classifier, VotingClassifer (Using Decision Tree & Multinomial Naive Bayes algorithms and feeding it to voting algorithm to increase the F1 Score) models were build and the F1 scores are as shown below. It was noted that the Random Forest Classifier has the best F1 score, hence Random Forest Algorithm is selected for predicting the results of this problem statement.
+
+Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
+
 **1. Model Creation and Hyperparameter Tuning:** 
 **1. Model Deployemnt:**   
 
