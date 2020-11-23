@@ -48,12 +48,13 @@ c. Created a binary feature (0 or 1) representing whether a text message has cur
 **3. Model Building and Evaluation:** 
 Multinomial Naive bayes, Decision Tree Classifier, Random Forest Classifier, VotingClassifer (Using Decision Tree & Multinomial Naive Bayes algorithms and feeding it to voting algorithm to increase the F1 Score) models were build and the F1 scores are as shown below. 10-fold cross validation technique was used while building the models in order to flag problems like overfitting or selection bias and to give an insight on how the model will generalize to an independent dataset. It was noted that the Random Forest Classifier has the best F1 score, hence Random Forest Algorithm is selected for predicting the results of this problem statement.
 
-          Model              | F1 Score |
----------------------------  | -------- |
- Multinomial Naive Bayes     |   0.943  |
- Decision Tree Classifier    |   0.980  |    
- **Random Forest Classifier**| **0.994**|
- Voting Classifier           |   0.980  |
+
+ | Model  | F1 Score  |
+| :------------: |:---------------:|
+| Multinomial Naive Bayes     |  0.943 |
+| Decision Tree Classifier       |  0.980        |
+| **Random Forest Classifier** | **0.994**        |
+| Voting Classifier | 0.980        |
 
 **1. Model Creation and Hyperparameter Tuning:** 
 **1. Model Deployemnt:**   
