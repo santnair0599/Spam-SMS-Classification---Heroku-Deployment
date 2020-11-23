@@ -48,9 +48,12 @@ c. Created a binary feature (0 or 1) representing whether a text message has cur
 **3. Model Building and Evaluation:** 
 Multinomial Naive bayes, Decision Tree Classifier, Random Forest Classifier, VotingClassifer (Using Decision Tree & Multinomial Naive Bayes algorithms and feeding it to voting algorithm to increase the F1 Score) models were build and the F1 scores are as shown below. It was noted that the Random Forest Classifier has the best F1 score, hence Random Forest Algorithm is selected for predicting the results of this problem statement.
 
-Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
-Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
+Model                    | F1 Score |
+------------------------ | -------- |
+Multinomial Naive Bayes  |   301    |
+Decision Tree Classifier |   301    |    
+Random Forest Classifier |   301    |
+Voting Classifier        |   301    |
 
 **1. Model Creation and Hyperparameter Tuning:** 
 **1. Model Deployemnt:**   
