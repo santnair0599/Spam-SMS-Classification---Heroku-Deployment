@@ -127,6 +127,7 @@ $ conda list -e > requirements.txt
 ```
 
 **Deploying to heroku**
+```
 $ heroku create sms-spam-classifer --buildpack heroku/python
 $ heroku git:remote -a sms-spam-classifer
 $ pip install gunicorn
@@ -139,6 +140,7 @@ $ git add .
 $ git commit -m "commit msg"
 $ git push heroku master
 $ git push origin master
+```
 
 Also, refer the instructions given on [Heroku Documentation](https://devcenter.heroku.com/articles/getting-started-with-python) to deploy a web app.
 
