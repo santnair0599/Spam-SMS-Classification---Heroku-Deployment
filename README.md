@@ -71,6 +71,9 @@ Multinomial Naive bayes, Decision Tree Classifier, Random Forest Classifier, Vot
 | **Random Forest Classifier** | **0.994**        |
 | Voting Classifier | 0.980        |
 
+
+![alt text](https://github.com/santnair0599/Spam-SMS-Classification---Heroku-Deployment/blob/main/images/7.%20Confusion%20Matrix%20-%20Random-Forest.png)
+
 **1. Model Creation and Hyperparameter Tuning:** 
 **1. Model Deployemnt:**   
 
