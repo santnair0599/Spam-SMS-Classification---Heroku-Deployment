@@ -116,7 +116,9 @@ $ flask run
 **Requirents.txt**
 
 ```
-To install the required packages and libraries, run this command in the project directory after [cloning](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/) the repository:
+To install the required packages and libraries, run this command in the project directory after 
+[cloning](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/) the repository:
+
 $ pip freeze > requirements.txt
 ```
 or 
