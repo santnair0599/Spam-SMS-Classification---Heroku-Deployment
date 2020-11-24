@@ -24,6 +24,8 @@ Link: [https://sms-spam-classification-flask.herokuapp.com/](https://sms-spam-cl
 ## Overview
 This is a simple text classification problem using python where we sort spam messages from ham. The dataset that we’re using can be found at https://www.kaggle.com/uciml/sms-spam-collection-dataset. The dataset contains one set of SMS messages in English of 5,574 messages, tagged as being ham (legitimate) or spam. The modules used for building the model are — pandas, numpy, nltk, seaborn, matplotlib, string and sklearn. Finally, a python web API is created using Flask and the model is deployed in Heroku.
 
+![alt text](https://github.com/santnair0599/Spam-SMS-Classification---Heroku-Deployment/blob/main/images/1.%20Dataset.png)
+
 ## Performance Metric
 Since our dataset is imbalanced with 86% data being in ham class we’ll use F1 score (Precision*Recall/(Precision+Recall)) to measure the performance of the model. With the F1-score metric, we are trying to find an equal balance between precision and recall, which is extremely useful in most scenarios when we are working with imbalanced datasets. 
 
@@ -31,9 +33,22 @@ Since our dataset is imbalanced with 86% data being in ham class we’ll use F1 
 This project is divided into two part:
 
 **1. Exploratory Data Analysis & Feature Engineering:** 
-1. Created countplots for spam vs ham. It was observed that the dataset is imbalanced with 86% (4825 of 5525) of data belonging to ham class. The Spam and Ham data points were mapped with values as ham: 0 and spam: 1. Oversampling method was used to handle the imbalanced dataset.
-2. Created a new feature of total word count in each text message. Generated a plot showing distribution of word count for Ham messages versus distribution of word count of Spam messages. It was observed that the Ham messages word count range below 25 words whereas Spam messages word count range between 15 to 20 words. 
-3. Created a binary feature (0 or 1) representing whether a text message has currency symbol ('€', '$', '¥', '£', '₹'). Generated a countplot using this new feature. It was observed that about 1/3 of the Spam messages have currency symbols, whereas currency symbols are rarely found in Ham messages
+1. Created countplots for spam vs ham. It was observed that the dataset is imbalanced with 86% (4825 of 5525) of data belonging to ham class. The Spam and Ham data points were mapped with values as ham: 0 and spam: 1.
+
+![alt text](https://github.com/santnair0599/Spam-SMS-Classification---Heroku-Deployment/blob/main/images/2.%20Imbalanced%20Dataset.png)
+
+2. Oversampling method was used to handle the imbalanced dataset.
+
+![alt text](https://github.com/santnair0599/Spam-SMS-Classification---Heroku-Deployment/blob/main/images/3.%20Balanced%20Dataset.png)
+
+3. Created a new feature of total word count in each text message. Generated a plot showing distribution of word count for Ham messages versus distribution of word count of Spam messages. It was observed that the Ham messages word count range below 25 words whereas Spam messages word count range between 15 to 20 words. 
+
+![alt text](https://github.com/santnair0599/Spam-SMS-Classification---Heroku-Deployment/blob/main/images/4.%20Word%20Count%20-%20Ham%26Spam.png)
+
+4. Created a binary feature (0 or 1) representing whether a text message has currency symbol ('€', '$', '¥', '£', '₹'). Generated a countplot using this new feature. It was observed that about 1/3 of the Spam messages have currency symbols, whereas currency symbols are rarely found in Ham messages
+
+![alt text](https://github.com/santnair0599/Spam-SMS-Classification---Heroku-Deployment/blob/main/images/6.%20Countplot%20-%20Currency%20Symbols.png)
+
 
 **2. Data Cleaning:** The following activities were performed as part of data cleaning:
 1. Removing special characters and numbers using regular expression
