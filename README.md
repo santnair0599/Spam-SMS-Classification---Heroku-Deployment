@@ -31,9 +31,9 @@ Since our dataset is imbalanced with 86% data being in ham class we’ll use F1 
 This project is divided into two part:
 
 **1. Exploratory Data Analysis & Feature Engineering:** 
-a. Created countplots for spam vs ham. It was observed that the dataset is imbalanced with 86% (4825 of 5525) of data belonging to ham class. The Spam and Ham data points were mapped with values as ham: 0 and spam: 1. Oversampling method was used to handle the imbalanced dataset.
-b. Created a new feature of total word count in each text message. Generated a plot showing distribution of word count for Ham messages versus distribution of word count of Spam messages. It was observed that the Ham messages word count range below 25 words whereas Spam messages word count range between 15 to 20 words. 
-c. Created a binary feature (0 or 1) representing whether a text message has currency symbol ('€', '$', '¥', '£', '₹'). Generated a countplot using this new feature. It was observed that about 1/3 of the Spam messages have currency symbols, whereas currency symbols are rarely found in Ham messages
+1. Created countplots for spam vs ham. It was observed that the dataset is imbalanced with 86% (4825 of 5525) of data belonging to ham class. The Spam and Ham data points were mapped with values as ham: 0 and spam: 1. Oversampling method was used to handle the imbalanced dataset.
+2. Created a new feature of total word count in each text message. Generated a plot showing distribution of word count for Ham messages versus distribution of word count of Spam messages. It was observed that the Ham messages word count range below 25 words whereas Spam messages word count range between 15 to 20 words. 
+3. Created a binary feature (0 or 1) representing whether a text message has currency symbol ('€', '$', '¥', '£', '₹'). Generated a countplot using this new feature. It was observed that about 1/3 of the Spam messages have currency symbols, whereas currency symbols are rarely found in Ham messages
 
 **2. Data Cleaning:** The following activities were performed as part of data cleaning:
 1. Removing special characters and numbers using regular expression
