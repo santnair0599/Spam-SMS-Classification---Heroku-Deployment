@@ -3,18 +3,14 @@
 ## Table of Content
   * [Demo](#demo)
   * [Overview](#overview)
-  * [Motivation](#motivation)
-  * [Technical Aspect](#technical-aspect)
+  * [Performance Metric](#performance metric)
+  * [Project Lifecycle](#project lifecycle)
   * [Installation](#installation)
   * [Run](#run)
-  * [Deployement on Heroku](#deployement-on-heroku)
-  * [Directory Tree](#directory-tree)
   * [To Do](#to-do)
   * [Bug / Feature Request](#bug---feature-request)
-  * [Technologies Used](#technologies-used)
   * [Team](#team)
-  * [License](#license)
-  * [Credits](#credits)
+ 
   
   ## Demo
 Link: [https://sms-spam-classification-flask.herokuapp.com/](https://sms-spam-classification-flask.herokuapp.com/)
