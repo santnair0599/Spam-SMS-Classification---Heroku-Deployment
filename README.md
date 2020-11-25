@@ -8,7 +8,7 @@
   * [Installation](#installation)
   * [Run](#run)
   * [To Do](#to-do)
-  * [Bug / Feature Request](#bug---feature-request)
+  * [Bug / Feature Request](#bug-feature-request)
   * [Team](#team)
  
   
