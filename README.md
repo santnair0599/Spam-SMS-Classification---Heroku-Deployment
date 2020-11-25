@@ -3,8 +3,8 @@
 ## Table of Content
   * [Demo](#demo)
   * [Overview](#overview)
-  * [Performance Metric](#performance metric)
-  * [Project Lifecycle](#project lifecycle)
+  * [Performance Metric](#performance-metric)
+  * [Project Lifecycle](#project-lifecycle)
   * [Installation](#installation)
   * [Run](#run)
   * [To Do](#to-do)
