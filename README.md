@@ -170,5 +170,4 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 -|
 [Santosh Nair](https://rohitswami.com/) |)
 
-## Credits
-- [Google Images Download](https://github.com/hardikvasa/google-images-download) - This project wouldn't have been possible without this tool. It saved my enormous amount of time while collecting the data. A huge shout-out to its creator [Hardik Vasa](https://github.com/hardikvasa).
+
