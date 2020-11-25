@@ -148,7 +148,7 @@ Also, refer the instructions given on [Heroku Documentation](https://devcenter.h
 1. Build a Deep learning Spam Detection System for SMS using Keras and Python.
 2. Use Twilio SMS APIs so that we will be able to classify SMS messages sent to the phone number you have registered in your Twilio account..
 
-## Bug / Feature Request
+## Bug-Feature Request
 If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/santnair0599/Spam-SMS-Classification---Heroku-Deployment/issues/new) by including your search query and the expected result.
 
 If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/santnair0599/Spam-SMS-Classification---Heroku-Deployment/issues/new). Please include sample queries and their corresponding results.
